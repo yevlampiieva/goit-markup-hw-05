@@ -695,14 +695,13 @@ img {
   margin-bottom: 24px;
 }
 .modal-check-label {
-  display: flex;
-  align-items: center;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
 .modal-custom-check {
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 16px;
@@ -712,7 +711,7 @@ img {
   margin-right: 8px;
   background-color: transparent;
   fill: transparent;
-  display: inline-flex;
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
