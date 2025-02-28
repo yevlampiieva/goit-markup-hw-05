@@ -433,6 +433,7 @@
             growth solutions.
           </p>
         </div>
+
         <div class="footer-social-links-container">
           <p class="footer-social-media-text">Social media</p>
           <ul class="footer-social-media-list">
@@ -466,7 +467,102 @@
             </li>
           </ul>
         </div>
+
+        <div class="footer-form-container">
+          <p class="footer-form-title">Subscribe</p>
+          <form class="footer-form">
+            <label class="footer-form-label" for="user-email-send"></label>
+            <div class="footer-input-container">
+              <input
+                class="footer-form-input"
+                type="email"
+                id="user-email-send"
+                name="email"
+                placeholder="E-mail"
+                required
+              />
+              <button class="footer-form-btn">
+                Subscribe
+                <span class="footer-form-btn-icon">
+                  <svg class="btn-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-send"></use>
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <div class="modal-backdrop is-open">
+      <div class="modal">
+        <button class="modal-close-btn" type="button">
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="form-title">Leave your contacts and we will call you back</p>
+
+        <div class="modal-container-box">
+          <label class="modal-input-label" for="user-name">Name</label>
+          <div class="modal-input-container">
+            <input class="modal-input" id="user-name" name="user-name" type="text" required />
+            <svg class="modal-input-icon" width="18" height="18">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="modal-container-box">
+          <label class="modal-input-label" for="user-tel">Phone</label>
+          <div class="modal-input-container">
+            <input class="modal-input" id="user-tel" name="user-tel" type="tel" required />
+            <svg class="modal-input-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="modal-container-box">
+          <label class="modal-input-label" for="user-email">Email</label>
+          <div class="modal-input-container">
+            <input class="modal-input" id="user-email" name="user-email" type="email" required />
+            <svg class="modal-input-icon" width="18" height="24">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+        </div>
+
+        <div class="modal-container-textarea">
+          <label class="modal-textarea-label" for="user-comment">Comment</label>
+          <textarea
+            class="modal-textarea"
+            id="user-comment"
+            name="user-comment"
+            placeholder="Text input"
+          ></textarea>
+        </div>
+
+        <div class="modal-check-container">
+          <input
+            class="modal-check visually-hidden"
+            type="checkbox"
+            name="user-agree"
+            id="user-agree"
+          />
+          <label class="modal-check-label" for="user-agree">
+            <span class="modal-custom-check">
+              <svg class="modal-custom-check-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-check"></use>
+              </svg> </span
+            >I accept the terms and conditions of the&nbsp;
+            <a class="modal-link" href="">Privacy Policy</a>
+          </label>
+        </div>
+
+        <button class="modal-btn" type="submit">Send</button>
+      </div>
+    </div>
   </body>
 </html>
