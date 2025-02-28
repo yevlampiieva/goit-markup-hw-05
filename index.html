@@ -59,7 +59,7 @@
           <h1 class="hero-title">
             Effective solutions <span class="hero-title-accent">for</span> your business
           </h1>
-          <button class="hero-button" type="button">Order Service</button>
+          <button class="hero-button" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
 
@@ -495,9 +495,9 @@
       </div>
     </footer>
 
-    <div class="modal-backdrop is-open">
+    <div class="modal-backdrop" data-modal>
       <div class="modal">
-        <button class="modal-close-btn" type="button">
+        <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -564,5 +564,7 @@
         <button class="modal-btn" type="submit">Send</button>
       </div>
     </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
